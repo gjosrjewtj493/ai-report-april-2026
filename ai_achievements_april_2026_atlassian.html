@@ -1,0 +1,120 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --atl-blue: #0052CC;
+    --atl-blue-light: #0065FF;
+    --atl-blue-bg: #DEEBFF;
+    --atl-blue-text: #0747A6;
+    --atl-teal: #00B8D9;
+    --atl-teal-bg: #E6FCFF;
+    --atl-teal-text: #006B80;
+    --atl-green: #36B37E;
+    --atl-green-bg: #E3FCEF;
+    --atl-green-text: #006644;
+    --atl-purple: #6554C0;
+    --atl-purple-bg: #EAE6FF;
+    --atl-purple-text: #403294;
+    --atl-navy: #091E42;
+    --atl-slate: #253858;
+    --atl-mid: #42526E;
+    --atl-subtle: #6B778C;
+    --atl-divider: #DFE1E6;
+    --atl-surface: #F4F5F7;
+  }
+  .page { padding: 0 0 2rem; font-family: var(--font-sans); }
+  .hero { background: #0052CC; padding: 2rem 2.5rem 1.75rem; }
+  .hero-tag { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.15); color: #fff; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 3px; margin-bottom: 0.75rem; letter-spacing: 0.05em; }
+  .hero-dot { width: 6px; height: 6px; border-radius: 50%; background: #00B8D9; flex-shrink: 0; }
+  .hero h1 { font-size: 22px; font-weight: 500; color: #fff; margin-bottom: 0.25rem; }
+  .hero-sub { font-size: 13px; color: rgba(255,255,255,0.7); }
+  .body { padding: 1.75rem 2.5rem 0; }
+  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 1.75rem; }
+  .metric { background: #DEEBFF; border-radius: 4px; padding: 0.9rem 1rem; }
+  .metric-label { font-size: 11px; color: #0747A6; margin-bottom: 5px; font-weight: 500; letter-spacing: 0.03em; }
+  .metric-value { font-size: 22px; font-weight: 500; color: #0052CC; }
+  .metric-unit { font-size: 12px; font-weight: 400; color: #0747A6; }
+  .section-label { font-size: 11px; font-weight: 500; color: #6B778C; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 0.75rem; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 1.75rem; }
+  .card { background: #fff; border: 1px solid #DFE1E6; border-radius: 4px; padding: 1.1rem 1.25rem; border-top: 3px solid #0052CC; }
+  .card:nth-child(2) { border-top-color: #00B8D9; }
+  .card-num { font-size: 10px; font-weight: 500; color: #6B778C; margin-bottom: 6px; letter-spacing: 0.05em; }
+  .card-title { font-size: 14px; font-weight: 500; color: #091E42; margin-bottom: 8px; line-height: 1.4; }
+  .card-desc { font-size: 12px; color: #42526E; line-height: 1.6; margin-bottom: 12px; }
+  .card-footer { display: flex; align-items: center; gap: 8px; padding-top: 10px; border-top: 1px solid #DFE1E6; }
+  .lozenge { font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 3px; }
+  .loz-green { background: #E3FCEF; color: #006644; }
+  .loz-blue { background: #DEEBFF; color: #0747A6; }
+  .saving-text { font-size: 11px; color: #6B778C; }
+  .tool-section { background: #F4F5F7; border-radius: 4px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 14px; margin-bottom: 1.75rem; }
+  .rovo-icon { width: 36px; height: 36px; border-radius: 4px; background: #0052CC; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .rovo-r { font-size: 16px; font-weight: 500; color: #fff; font-family: var(--font-sans); }
+  .tool-name { font-size: 14px; font-weight: 500; color: #091E42; }
+  .tool-desc { font-size: 12px; color: #6B778C; margin-top: 2px; }
+  .connections { display: flex; gap: 8px; margin-top: 6px; }
+  .conn-pill { font-size: 11px; background: #DEEBFF; color: #0747A6; padding: 2px 8px; border-radius: 3px; font-weight: 500; }
+  .conn-pill.teal { background: #E6FCFF; color: #006B80; }
+  .footer { font-size: 12px; color: #6B778C; padding-top: 1rem; border-top: 1px solid #DFE1E6; text-align: right; font-style: italic; }
+</style>
+
+<div class="page">
+  <div class="hero">
+    <div class="hero-tag"><div class="hero-dot"></div>AI活用成果レポート — 2026年4月</div>
+    <h1>Rovoで実現した、地味だけど効く自動化</h1>
+    <p class="hero-sub">ヘルプページ運営チーム</p>
+  </div>
+
+  <div class="body">
+    <div class="metrics">
+      <div class="metric">
+        <div class="metric-label">自動化した作業数</div>
+        <div class="metric-value">2 <span class="metric-unit">件</span></div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">週あたりの削減時間</div>
+        <div class="metric-value">7〜13 <span class="metric-unit">分</span></div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">年間換算（概算）</div>
+        <div class="metric-value">6〜11 <span class="metric-unit">時間</span></div>
+      </div>
+    </div>
+
+    <p class="section-label">取り組み内容</p>
+    <div class="cards">
+      <div class="card">
+        <div class="card-num">JIRA — 自動化 01</div>
+        <div class="card-title">チケットタイトルへのスプリント番号自動入力</div>
+        <div class="card-desc">自動作成チケットのタイトルに含まれる「sp〇〇」番号を毎週3枚分手入力していた。チケット作成時に現スプリント番号が自動で埋め込まれるコードを作成。</div>
+        <div class="card-footer">
+          <span class="lozenge loz-green">完了</span>
+          <span class="saving-text">週3チケット → 2〜3分削減</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-num">Slack — 自動化 02</div>
+        <div class="card-title">翌営業日期日チケットのSlack自動通知</div>
+        <div class="card-desc">メンバーのチケットを逐一確認していた作業を自動化。翌営業日が期日のチケット番号・リンク・担当者・期日をSlackへ自動報告する仕組みを構築。</div>
+        <div class="card-footer">
+          <span class="lozenge loz-green">完了</span>
+          <span class="saving-text">確認作業 → 5〜10分削減</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="section-label">使用ツール</p>
+    <div class="tool-section">
+      <div class="rovo-icon"><span class="rovo-r">R</span></div>
+      <div>
+        <div class="tool-name">Rovo — Atlassian AI</div>
+        <div class="tool-desc">AtlassianのAIエージェント。コード生成とワークフロー自動化を支援。</div>
+        <div class="connections">
+          <span class="conn-pill">JIRA</span>
+          <span class="conn-pill teal">Slack</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">「小さな改善の積み重ねが、チームの余白をつくる」</div>
+  </div>
+</div>
